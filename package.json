@@ -1,0 +1,73 @@
+{
+  "name": "ng-datetime-calendar",
+  "version": "3.0.2",
+  "description": "Angular Date Time Picker, with max range as a additional feature.",
+  "keywords": [
+    "Angular",
+    "datepicker",
+    "date picker",
+    "timepicker",
+    "time picker"
+  ],
+  "author": "namita.mehta <namita.mehta@tatvasoft.com>",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build picker",
+    "test": "ng test picker",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build_lib": "ng build picker && cp README.md dist/picker",
+    "build_css": "mkdir -p dist/picker/assets/style && node-sass --output-style=compressed projects/picker/src/sass/picker.scss > dist/picker/assets/style/picker.min.css",
+    "npm_pack": "cd dist/picker && npm pack",
+    "package": "npm run build_lib && npm run build_css && npm run npm_pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NamitaMehta/date-time-picker.git"
+  },
+  "dependencies": {
+    "@angular/animations": "^8.2.14",
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "@angular/router": "^8.2.14",
+    "core-js": "^2.6.11",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "rxjs": "^6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.803.23",
+    "@angular-devkit/build-ng-packagr": "^0.803.23",
+    "@angular/cdk": "^7.3.7",
+    "@angular/cli": "^8.3.23",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/language-service": "^8.2.14",
+    "@types/jasmine": "^3.3.16",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^11.13.23",
+    "codelyzer": "^5.2.1",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "^2.0.6",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.5.1",
+    "ng-packagr": "^5.7.1",
+    "node-sass": "^4.13.1",
+    "protractor": "~5.4.2",
+    "ts-node": "^8.1.1",
+    "tsickle": "^0.37.1",
+    "tslib": "^1.10.0",
+    "tslint": "~5.16.0",
+    "typescript": "~3.5.3"
+  }
+}
